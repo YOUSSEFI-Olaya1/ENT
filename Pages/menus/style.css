@@ -1,0 +1,9 @@
+.table {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	text-transform: lowercase;
+	color: #003366;
+	font-variant: normal;
+	border: none;
+}
