@@ -2,36 +2,14 @@
 <?php 
     require_once("connexionBD.php");
     require_once('identifier.php');
-//    $count="select count(*) countp from clients";
-//    $resultatcount=$pdo->query($count);
-//    $tabcount=$resultatcount->fetch();
-//    $nbrclients=$tabcount['countp'];
-//
-//    $count="select count(*) countp from devis";
-//    $resultatcount=$pdo->query($count);
-//    $tabcount=$resultatcount->fetch();
-//    $nbrdevis=$tabcount['countp'];
-//
-//    $count="select count(*) countp from projets";
-//    $resultatcount=$pdo->query($count);
-//    $tabcount=$resultatcount->fetch();
-//    $nbrprojet=$tabcount['countp'];
 
     $requeteCount="select count(*) countUser from utilisateur";
     $resultatCount=$pdo->query($requeteCount);
     $tabCount=$resultatCount->fetch();
     $nbrUser=$tabCount['countUser'];
-
-
-//    $requeteFacture="select idfacture, nomprojets,nom ,montant,  datefacture from factures f,devis d ,clients c,projets p where d.iddevis=f.iddevis and p.idprojets=f.idprojets and f.idclients=c.idclients";
-//    $resultatFacture=$pdo->query($requeteFacture);
-//    
-
-
     ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
